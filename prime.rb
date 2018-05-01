@@ -1,11 +1,6 @@
 def prime?(number)
   n = number
 array = [*2..n-1]
- if n <= 1
-   return false
-elsif array.each { |number| n % number == 0 }
-  return false
-else
-  true
-end
+array.each { |number| return false if n <= 1 || n % number == 0 }
+  return true
 end
