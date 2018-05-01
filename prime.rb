@@ -1,8 +1,8 @@
 def prime?(number)
   n = number
   array = [*2..n-1]
-if n > 1 && array.each
+if n > 1 && array.each { |number| n / number}.even?
+  true
 else false
-
-
-  array.each { |number| n / number }
+end
+end
