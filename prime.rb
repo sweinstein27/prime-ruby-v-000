@@ -8,3 +8,4 @@ elsif array.each { |number| n % number == 0 }
 else
   false
 end
+end
